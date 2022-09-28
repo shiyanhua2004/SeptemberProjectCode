@@ -7,13 +7,13 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int[][] preBuiltOptions = new int[2][2];
-        preBuiltOptions[1][1]= 100;
-        preBuiltOptions[1][2]=1000;
-        preBuiltOptions[2][1]=-100;
-        preBuiltOptions[2][2]=-1000;
+        preBuiltOptions[0][0]= 100;
+        preBuiltOptions[0][1]=1000;
+        preBuiltOptions[1][0]=-100;
+        preBuiltOptions[1][1]=-1000;
 
-        User user = new User("emad","shiran","emad534624@gamil.com");
-        User user2 = new User("ahmed","abdullahi","ahmedabdullahi1234@.com");
+        User user = new User("1","1","1");
+
 
 
 
@@ -70,34 +70,80 @@ public class Main {
                     case 1:
 
                         System.out.println("How much would you like to add to your account?");
-                        double depositNum = scanner.nextDouble();
+                        System.out.println("Press 1 for 100$\n" +
+                                "press 2 for 1000$\n" +
+                                "Press 3 for custom ");
+
+
+                        int userChoiceNum1=scanner.nextInt();
                         scanner.nextLine();
-                        userinfo[1] = depositNum;
-                        userinfo[0] += userinfo[1];
-                        System.out.println("currentBalance: " + userinfo[0]);
+                        if (userChoiceNum1==1) {
+                            userinfo[0]+=preBuiltOptions[0][0];
+                            System.out.println("currentBalance: " + userinfo[0]);
+                            break;
 
-                        break;
 
+
+                        }
+                        else if (userChoiceNum1==2) {
+                            userinfo[0]+=preBuiltOptions[0][1];
+                            System.out.println("currentBalance: " + userinfo[0]);
+                            break;
+
+
+
+                        }
+                        else if (userChoiceNum1==3) {
+                            System.out.println("Plese enter amount!");
+                            double depositNum = scanner.nextDouble();
+                            scanner.nextLine();
+
+                            userinfo[1] = depositNum;
+                            userinfo[0] += userinfo[1];
+                            System.out.println("currentBalance: " + userinfo[0]);
+
+                            break;
+                        }
 
                     case 2:
+
                         System.out.println("How much would you like to withdraw?");
                         System.out.println("Press 1 for 100$\n" +
                                 "press 2 for 1000$\n" +
                                 "Press 3 for custom ");
 
-                        int userChoicenum = scanner.nextInt();
-
-
-
-
-                        double withdrawNum = scanner.nextDouble();
+                        int userChoiceNum2 = scanner.nextInt();
                         scanner.nextLine();
-                        userinfo[2] = withdrawNum;
-                        userinfo[0] -= userinfo[2];
-                        System.out.println("currentBalance: " + userinfo[0]);
 
-                        break;
 
+                        if (userChoiceNum2==1) {
+                             userinfo[0]+=preBuiltOptions[1][0];
+
+                            System.out.println("currentBalance: " + userinfo[0]);
+                            break;
+
+
+                        }
+                        else if (userChoiceNum2==2) {
+                            userinfo[0]+=preBuiltOptions[1][1];
+
+                            System.out.println("currentBalance: " + userinfo[0]);
+
+                            break;
+
+
+                        }
+                        else if (userChoiceNum2==2) {
+
+                            System.out.println("Plese enter amount!");
+                            double withdrawNum = scanner.nextDouble();
+                            scanner.nextLine();
+                            userinfo[2] = withdrawNum;
+                            userinfo[0] -= userinfo[2];
+                            System.out.println("currentBalance: " + userinfo[0]);
+
+                            break;
+                        }
 
 
 

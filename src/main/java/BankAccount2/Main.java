@@ -13,6 +13,7 @@ public class Main {
         preBuiltOptions[2][2]=-1000;
 
         User user = new User("emad","shiran","emad534624@gamil.com");
+        User user2 = new User("ahmed","abdullahi","ahmedabdullahi1234@.com");
 
 
 

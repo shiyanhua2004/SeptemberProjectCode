@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         User user = new User("emad","shiran","emad534624@gamil.com");
+        User user2 = new User("ahmed","abdullahi","ahmedabdullahi1234@.com");
 
 
 

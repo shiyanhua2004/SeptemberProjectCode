@@ -6,6 +6,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        int[][] preBuiltOptions = new int[2][2];
+        preBuiltOptions[1][1]= 100;
+        preBuiltOptions[1][2]=1000;
+        preBuiltOptions[2][1]=-100;
+        preBuiltOptions[2][2]=-1000;
+
         User user = new User("emad","shiran","emad534624@gamil.com");
 
 
@@ -74,6 +80,15 @@ public class Main {
 
                     case 2:
                         System.out.println("How much would you like to withdraw?");
+                        System.out.println("Press 1 for 100$\n" +
+                                "press 2 for 1000$\n" +
+                                "Press 3 for custom ");
+
+                        int userChoicenum = scanner.nextInt();
+
+
+
+
                         double withdrawNum = scanner.nextDouble();
                         scanner.nextLine();
                         userinfo[2] = withdrawNum;

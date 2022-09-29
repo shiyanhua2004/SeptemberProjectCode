@@ -168,7 +168,7 @@ public class Main
     {
         System.out.println("Logging in...");
     }
-    // user text menu to show options
+    // user text menu to show optionss
     private static void infoText()
     {
         System.out.println("\nPlease press\n" +

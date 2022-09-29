@@ -32,7 +32,7 @@ public class BankAccountTest {
         double amount = 100;
         double numSubtract =50;
 
-        assertEquals(50, Bank.subSpecific(amount, numSubtract));
+        assertEquals(50,Bank.subSpecific(amount, numSubtract));
 
     }
 }

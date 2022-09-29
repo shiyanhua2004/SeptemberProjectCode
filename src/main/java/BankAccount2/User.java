@@ -5,7 +5,7 @@ public class User {
     // a simple class to add the information that we want in our main methodd
     private String name;
     private String lastName;
-    private String email;
+    private String email ;
 
     public User(String name, String lastName, String email) {
         this.name = name;

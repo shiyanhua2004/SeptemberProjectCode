@@ -6,7 +6,7 @@ public class Bank {
     public static double subHundred(double balance) {
 
         balance += UserInterface.preBuiltOptions[1][0];
-        return balance;
+        return balance ;
     }
 
     // method to subtract 1000 from account balance

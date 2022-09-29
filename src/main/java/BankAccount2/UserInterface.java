@@ -212,6 +212,6 @@ public class UserInterface extends Bank {
         preBuiltOptions[0][0] = 100;
         preBuiltOptions[0][1] = 1000;
         preBuiltOptions[1][0] = -100;
-        preBuiltOptions[1][1] = -1000;
+        preBuiltOptions[1][1] = -1000 ;
     }
 }

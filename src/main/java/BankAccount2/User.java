@@ -2,6 +2,7 @@ package BankAccount2;
 
 
 public class User {
+    // a simple class to add the information that we want in our main methodd
     private String name;
     private String lastName;
     private String email;
